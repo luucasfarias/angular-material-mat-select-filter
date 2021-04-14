@@ -1,0 +1,25 @@
+<div class="container">
+  <button mat-raised-button color="warn" (click)="select.open()">
+    Marketplaces
+  </button>
+
+  <mat-select class="select" #select>
+    <div style="margin: 10px">
+      <input matInput placeholder="Pesquisar" [formControl]="itemControl" />
+    </div>
+    <mat-option
+      *ngFor="let item of filteredOptions | async"
+      [value]="item.name"
+    >
+      <div (click)="optionClicked($event, item)">
+        <mat-checkbox
+          [checked]="item.selected"
+          (change)="toggleSelection(item)"
+          (click)="$event.stopPropagation()"
+        >
+          {{ item.name }}
+        </mat-checkbox>
+      </div>
+    </mat-option>
+  </mat-select>
+</div>

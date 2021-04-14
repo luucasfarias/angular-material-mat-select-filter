@@ -1,0 +1,23 @@
+::ng-deep .select div.mat-select-arrow-wrapper {
+  display: none;
+}
+::ng-deep .mat-select-panel {
+  margin-top: 20px;
+  width: 300px !important;
+  border-radius: 10px !important;
+  outline: none;
+  margin-left: 16px;
+}
+
+input {
+  height: 30px;
+  width: 96%;
+  border: 2px solid #818181;
+  border-radius: 6px;
+  outline: none;
+  padding: 5px;
+}
+
+div.container {
+  margin: 20px;
+}
