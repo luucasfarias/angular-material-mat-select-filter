@@ -14,17 +14,24 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatListModule } from '@angular/material/list';
 
 import { SelectFilterComponent } from './select-filter/select-filter.component';
+import { ButtonComponent } from './button/button.component';
+
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [AppComponent, SelectFilterComponent],
+  declarations: [AppComponent, SelectFilterComponent, ButtonComponent],
   imports: [
     BrowserModule,
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    HttpClientModule,
 
     MatSelectModule,
     MatButtonModule,
@@ -33,6 +40,9 @@ import { SelectFilterComponent } from './select-filter/select-filter.component';
     MatAutocompleteModule,
     MatCheckboxModule,
     MatCardModule,
+    MatIconModule,
+    MatChipsModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

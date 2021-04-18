@@ -1,12 +1,29 @@
 <div class="container">
-  <button mat-raised-button color="warn" (click)="select.open()">
-    Marketplaces
+  <button
+    ngfor
+    mat-raised-button
+    (click)="select.open()"
+    style="background: #0075bf; color: #fff"
+  >
+    <div style="display: flex; justify-content: space-between">
+      <span> Marketplaces </span>
+
+      <mat-chip-list class="mat-chip-list-stacked" aria-label="Color selection">
+        <mat-chip> 10 </mat-chip>
+      </mat-chip-list>
+    </div>
   </button>
 
   <mat-select class="select" #select>
     <div style="margin: 10px">
       <input matInput placeholder="Pesquisar" [formControl]="itemControl" />
     </div>
+    <button mat-button>
+      <mat-icon aria-hidden="false" aria-label="Example home icon"
+        >delete_outline</mat-icon
+      >
+      <span>Remover itens selecionados</span>
+    </button>
     <mat-option
       *ngFor="let item of filteredOptions | async"
       [value]="item.name"

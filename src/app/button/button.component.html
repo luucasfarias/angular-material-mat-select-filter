@@ -1,0 +1,16 @@
+<button
+  mat-button
+  [type]="buttonType"
+  [ngClass]="styleButtonType"
+  [color]="color"
+  [disabled]="isDisabled"
+  (click)="onClick()"
+>
+  <ng-container *ngIf="!matIcon; else hasIcon">
+    {{ text }}
+  </ng-container>
+  <ng-template #hasIcon>
+    <mat-icon>{{ matIconName }}</mat-icon>
+    {{ text }}
+  </ng-template>
+</button>

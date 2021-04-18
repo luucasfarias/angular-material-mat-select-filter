@@ -1,1 +1,22 @@
-<app-select-filter></app-select-filter>
+<div style="display: flex">
+  <app-select-filter></app-select-filter>
+</div>
+
+<div style="margin: 100px">
+  <app-button [text]="text" (buttonClick)="savePost()"></app-button>
+</div>
+
+<div style="margin: 100px">
+  <app-button
+    text="Carregar posts"
+    color="warn"
+    (buttonClick)="getPosts()"
+  ></app-button>
+
+  <h2 *ngIf="dataPosts">Lista de posts</h2>
+  <mat-list>
+    <mat-list-item *ngFor="let item of dataPosts">
+      {{ item.title }} - {{ item.author }}
+    </mat-list-item>
+  </mat-list>
+</div>

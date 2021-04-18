@@ -1,6 +1,7 @@
 ::ng-deep .select div.mat-select-arrow-wrapper {
   display: none;
 }
+
 ::ng-deep .mat-select-panel {
   margin-top: 20px;
   width: 300px !important;
@@ -20,4 +21,12 @@ input {
 
 div.container {
   margin: 20px;
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
 }

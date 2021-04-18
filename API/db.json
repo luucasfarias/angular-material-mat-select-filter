@@ -1,0 +1,44 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Angular expert",
+      "author": "Jhon Papa"
+    },
+    {
+      "id": 2,
+      "title": "Angular Transloco",
+      "author": "Napel"
+    },
+    {
+      "id": 3,
+      "title": "Um teste",
+      "author": "Lucas"
+    },
+    {
+      "id": 4,
+      "title": "Mais um teste",
+      "author": "Lucas"
+    },
+    {
+      "id": 5,
+      "title": "Mais um teste",
+      "author": "Lucas"
+    },
+    {
+      "id": 6,
+      "title": "Angular carregamento lazy",
+      "author": "Lucas Farias"
+    },
+    {
+      "title": "Angular carregamento",
+      "author": "Lucas",
+      "id": 7
+    },
+    {
+      "title": "Angular carregamento",
+      "author": "Lucas",
+      "id": 8
+    }
+  ]
+}
